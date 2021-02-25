@@ -132,6 +132,7 @@ header ul li:last-child{
 	background-size: cover;
 	padding: 230px 0;
 	position: relative;
+	overflow:hidden;
 }
 .bg-video__player {
   position: absolute;
@@ -657,7 +658,51 @@ footer ul li:hover{
 	
 }
 @media (max-width: 512px) {
-	
+	#main{
+		padding:150px 0;
+	}
+	h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	footer ul{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	footer ul li{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.copyright-box{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.copyright-box p{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.copyright-box img{
+		margin-bottom: 15px;
+	}
+	.addititon h3{
+		font-size: 24px;
+		line-height: 35px;
+	}
+	p.subik{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.swiper-slide-active .tour-slide{
+		transform: scale(1);
+	}
+	#about{
+		background-image: none;
+	}
 }
 @media (max-width: 390px) {
 	

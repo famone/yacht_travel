@@ -5,12 +5,12 @@
 				<div class="logo">
 					<img src="../../assets/img/logo.svg" alt="">
 				</div>
-				<ul>
+				<ul class="hidden-xs hidden-sm">
 					<router-link tag="li" :to="nav.link" v-for="nav in navs">
 						{{nav.txt}}
 					</router-link>
 				</ul>
-				<div class="socials">
+				<div class="socials hidden-xs hidden-sm">
 					<a href=""><img src="../../assets/img/telega.svg" alt=""></a>
 					<a href=""><img src="../../assets/img/insta.svg" alt=""></a>
 				</div>
