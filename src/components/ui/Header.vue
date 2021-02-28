@@ -2,9 +2,9 @@
 	<header>
 		<div class="container">
 			<div class="shapka">
-				<div class="logo">
+				<router-link tag="div" to="/" class="logo">
 					<img src="../../assets/img/logo.svg" alt="">
-				</div>
+				</router-link>
 				<ul class="hidden-xs hidden-sm">
 					<router-link tag="li" :to="nav.link" v-for="nav in navs">
 						{{nav.txt}}

@@ -243,7 +243,7 @@ p.subik{
 	font-size: 20px;
 	line-height: 27px;
 	color: #BE8D55;
-	font-weight: 600;
+	font-weight: 500;
 	margin-bottom: 50px;
 }
 
@@ -261,7 +261,7 @@ p.subik{
 	position: relative;
 	height: 233px;
 	width: 100%;
-	background-image: url(../../assets/img/yacht1.jpg);
+	/*background-image: url(../../assets/img/yacht1.jpg);*/
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -354,7 +354,7 @@ h3{
 }
 
 .simple-btn{
-	font-size: 16;
+	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 0.1em;
 	color: #BE8D55;
@@ -585,6 +585,134 @@ footer ul li:hover{
 	color: #FFFFFF;
 	font-weight: 400;
 }
+
+/*yacht page*/
+
+
+#inner{
+	padding:130px 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#inner:before{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #192531;
+	opacity: .5;
+}
+#inner h1{
+	margin: 50px 0;
+}
+.goback-btn{
+	font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding: 15px 32px;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+.goback-btn:hover{
+	background-color: #fff;
+	color: #192531;
+}
+
+#aboutYacht{
+	padding:60px 0;
+}
+#aboutYacht .subik{
+	margin-bottom: 10px;
+}
+h4{
+	color: #192531;
+    position: relative;
+    z-index: 5;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.yacht-row{
+	margin-bottom: 50px;
+}
+h5{
+	font-weight: 500;
+    font-size: 0.1em;
+    font-size: 18px;
+    line-height: 2;
+    color: rgba(35,61,87,.4);
+    margin: 0;
+    margin-bottom: 15px;
+}
+.small-grey{
+	font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #C4C4C4;
+    margin-bottom: 10px;
+}
+.blue-txt{
+	font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #192531;
+}
+.food-menu{
+	height: 430px;
+	background-image: url(../img/add1.png);
+	background-size: cover;
+	background-position: 80% center;
+	background-repeat: no-repeat;
+	width: 100%;
+	border-radius: 10px;
+	padding:30px 45px;
+	display: flex;justify-content: flex-start;
+	align-items: flex-end;
+}
+.sticky-food{
+	position: sticky;
+	top: 60px;
+}
+
+.food-menu .gold-btn{
+	width: 100%;
+}
+
+.share-btn{
+	margin-bottom: 20px;
+	background-color: transparent;
+	border: none;
+	color: #192531;
+	border-bottom: 2px solid #192531;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	padding:5px 0;
+}
+.share-btn img{
+	height: 16px;
+	margin-top: -2px;
+}
+.liked{
+	color: #BE8D55;
+	border-bottom: 2px solid #BE8D55;
+}
+
+
+
+
+
 
 
 

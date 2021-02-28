@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Main />
-		<Yachts />
+		<Yachts :title=" 'СУДНА' " />
 		<About />
 		<Tours />
 		<Additions />
