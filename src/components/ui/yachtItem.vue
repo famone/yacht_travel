@@ -14,7 +14,7 @@
 					<p ><img src="../../assets/img/speed.svg" alt="">{{singleYacht.speed}} км/час</p>
 				</div>
 				<p class="price">от {{singleYacht.price.toLocaleString()}} ₽/час</p>
-				<router-link tag="button" :to=" '/' + singleYacht.slug " class="gold-btn">ПОДРОБНЕЕ</router-link>
+				<router-link tag="button" :to=" '/yachts/' + singleYacht.slug " class="gold-btn">ПОДРОБНЕЕ</router-link>
 			</div>
 		</div>
 	</div>

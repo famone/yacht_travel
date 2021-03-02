@@ -1,5 +1,5 @@
 <template>
-	<header>
+	<header :class="{darkHeader : this.$route.matched[0].path === '*' }">
 		<div class="container">
 			<div class="shapka">
 				<router-link tag="div" to="/" class="logo">
@@ -12,10 +12,10 @@
 				</ul>
 				<div class="socials hidden-xs hidden-sm">
 					<a href=""><img src="../../assets/img/telega.svg" alt=""></a>
-					<a href=""><img src="../../assets/img/insta.svg" alt=""></a>
+					<a href="https://www.instagram.com/yachtrus/"><img src="../../assets/img/insta.svg" alt=""></a>
 				</div>
 
-				<a href="" class="call-me">
+				<a href="tel:+79990211002" class="call-me">
 					<img src="../../assets/img/tel.svg" alt="">
 				</a>
 			</div>

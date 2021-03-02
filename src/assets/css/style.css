@@ -49,6 +49,9 @@ header{
 	left: 0;
 	padding:30px;
 }
+.darkHeader{
+	background-color: #192531;
+}
 .shapka{
 	display: flex;
 	justify-content: space-between;
@@ -237,6 +240,7 @@ h2{
 	color: #192531;
 	margin-top: 0;
 	margin-bottom: 5px;letter-spacing: 0.1em;
+	position: relative;
 }
 p.subik{
 	letter-spacing: 0.1em;
@@ -389,6 +393,7 @@ h3{
 	position: absolute;
 	left: -50px;
 	top: -110px;
+	z-index: 0;
 }
 .black-txt{
 	font-size: 16px;
@@ -482,15 +487,17 @@ h3{
 	align-items: flex-end;
 	margin-bottom: 30px;
 }
+
 .addititon img{
 	height: 110px;
 }
 .addititon h3{
-	font-size: 35px;
+	font-size: 24px;
 	margin-bottom: 10px;
-	line-height: 45px;
+	line-height: 31px;
 }
 .addititon .subik{
+	font-size: 18px;
 	margin-bottom: 0;
 }
 .hover-layer{
@@ -529,7 +536,10 @@ h3{
 	z-index: 10;
 }
 
-
+.w-100{
+	width: 100%;
+	margin-bottom: 30px;
+}
 
 
 
