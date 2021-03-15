@@ -15,10 +15,14 @@
 			</div>
 		</div>
 
+
 		<div class="row">
 				<swiper ref="mySwiper" :options="swiperOptions">
 					<swiper-slide v-for="item in tours">
-		    			<div class="tour-slide" :style="{'background-image': 'url(' + item.img + ')'}">
+		    			<div class="tour-slide" :style="{'background-image': 'url(' + item.images[0] + ')'}">
+		    				<router-link class="more-look" tag="div" :to="'/tours/' + item.slug">
+		    					
+		    				</router-link>
 		    				<h3>{{item.name}}</h3>
 		    			</div>
 		    		</swiper-slide>
@@ -36,29 +40,19 @@
 
 
 <script>
+import {mapGetters} from 'vuex'
 
 	export default{
-		comuted: {
+		computed: {
+			...mapGetters({
+				tours: "tours/getTours"
+			}),
 			swiper(){
 	       		return this.$refs.mySwiper.$swiper
 	    	}
 		},
 		data(){
 			return{
-				tours: [
-					{
-						name: 'КАРЕЛИЯ',
-						img: require('../assets/img/karel.jpg')
-					},
-					{
-						name: 'КАРЕЛИЯ',
-						img: require('../assets/img/karel.jpg')
-					},
-					{
-						name: 'КАРЕЛИЯ',
-						img: require('../assets/img/karel.jpg')
-					},
-				],
 				swiperOptions: {
                   slidesPerView: 2.8,
                   spaceBetween: 30,

@@ -1,9 +1,13 @@
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
 import singleYacht from '../pages/singleYacht.vue'
+import singleTour from '../pages/singleTour.vue'
 import Mazu from '../pages/Mazu.vue'
 import Trust from '../pages/Trust.vue'
 import Fund from '../pages/Fund.vue'
+import Addition from '../pages/Addition.vue'
+import Tours from '../pages/Tours.vue'
+import Yachts from '../pages/Yachts.vue'
 import Notfound from '../pages/Notfound.vue'
 
 
@@ -18,15 +22,32 @@ const routes = [
 			props: true
 		},
 		{
-			path: '/mazu-school',
+			path: '/yachts',
+			component: Yachts
+		},
+		{
+			path: '/tours/:id',
+			component: singleTour,
+			props: true
+		},
+		{
+			path: '/tours',
+			component: Tours
+		},
+		{
+			path: '/dopolnitelno',
+			component: Addition
+		},
+		{
+			path: '/dopolnitelno/mazu-school',
 			component: Mazu
 		},
 		{
-			path: '/doveritelnoe-upravlenie',
+			path: '/dopolnitelno/doveritelnoe-upravlenie',
 			component: Trust
 		},
 		{
-			path: '/yacht-and-travel-fund',
+			path: '/dopolnitelno/yacht-and-travel-fund',
 			component: Fund
 		},
 		{

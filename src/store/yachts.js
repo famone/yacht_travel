@@ -88,10 +88,18 @@ const yachts = {
 		]
   	},
 	mutations: {
-		
+		SET_YACHTS(state, payload){
+			state.yachts = payload
+		}
 	},
 	actions: {
-         
+         loadYachts({commit}){
+         	axios
+			.get('https://yachtsrus.ru/wp-json/yt/v1/get/yahts')
+			.then(res =>{
+				commit('SET_YACHTS', res.data)
+			})
+         }
 	},
 	getters: {
 		getYachts(state){

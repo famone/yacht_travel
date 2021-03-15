@@ -22,7 +22,9 @@
 					<p class="white-txt">ОГРН: 1234567891011</p>
 					<img src="../../assets/img/yakor.svg" alt="">
 					<p class="white-txt">YACHTS.RUS - 2021</p>
-					<p class="white-txt">MADE IN WEBINK</p>
+					<p class="white-txt webink">
+						<a href="">👨‍💻 MADE IN WEBINK</a>
+					</p>
 				</div>
 			</div>
 		</div>

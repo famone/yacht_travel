@@ -1,9 +1,11 @@
 <template>
 	<div>
+		<simpleForm v-if="openPop" @closePop="closePop" :messageSubject=" 'Заявка на проект доверительного управления' " />
 		<section id="inner">
 			<div class="container text-center">
+				<button class="goback-btn" @click="$router.go(-1)">НАЗАД</button>
 				<h1>Проект доверительного управления</h1>
-				<button class="gold-btn">СОТРУДНИЧАТЬ С НАМИ</button>
+				<button class="gold-btn" @click="openPop = !openPop">СОТРУДНИЧАТЬ С НАМИ</button>
 			</div>
 		</section>
 		<section id="about">
@@ -117,7 +119,7 @@
 					<div class="col-lg-12 text-center">
 
 						<br><br><br>
-						<button class="simple-btn">СОТРУДНИЧАТЬ С НАМИ</button>
+						<button class="simple-btn" @click="openPop = !openPop">СОТРУДНИЧАТЬ С НАМИ</button>
 					</div>
 				</div>
 
@@ -128,11 +130,18 @@
 </template>
 
 <script>
+import simpleForm from '../components/ui/simpleForm.vue'
 	export default{
-		
+		components: {simpleForm},
 		data(){
 			return{
-				
+				openPop: false,
+
+			}
+		},
+		methods:{
+			closePop(){
+				this.openPop = false
 			}
 		}
 

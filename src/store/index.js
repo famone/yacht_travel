@@ -5,10 +5,12 @@ Vue.use(Vuex)
 
 import yachts from '../store/yachts'
 import serv from '../store/serv'
+import tours from '../store/tours'
 
 export default new Vuex.Store({
 	modules: {
 		yachts,
-		serv
+		serv,
+		tours
 	}
 }) 

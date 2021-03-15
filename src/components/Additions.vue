@@ -14,7 +14,7 @@
 						<p class="subik">ПОДГОТОВКА И ПОДБОР КАНДИТОВ НА ЧАСТНЫЕ ЯХТЫ</p>
 					</div>
 					<div class="hover-layer">
-						<router-link class="white-btn" tag="button" to="/mazu-school">ПОДРОБНЕЕ</router-link>
+						<router-link class="white-btn" tag="button" to="/dopolnitelno/mazu-school">ПОДРОБНЕЕ</router-link>
 					</div>
 				</div>
 
@@ -26,7 +26,7 @@
 						<p class="subik">ВАША ЯХТА В НАШИХ РУКАХ</p>
 					</div>
 					<div class="hover-layer">
-						<router-link class="white-btn" tag="button" to="/doveritelnoe-upravlenie">ПОДРОБНЕЕ</router-link>
+						<router-link class="white-btn" tag="button" to="/dopolnitelno/doveritelnoe-upravlenie">ПОДРОБНЕЕ</router-link>
 					</div>
 				</div>
 				
@@ -38,7 +38,7 @@
 						<p class="subik">ЗАКРЫТЫЙ ПАЕВОЙ ИНВЕСТИЦИОННЫЙ ФОНД</p>
 					</div>
 					<div class="hover-layer">
-						<router-link class="white-btn" tag="button" to="/yacht-and-travel-fund">ПОДРОБНЕЕ</router-link>
+						<router-link class="white-btn" tag="button" to="/dopolnitelno/yacht-and-travel-fund">ПОДРОБНЕЕ</router-link>
 					</div>
 				</div>
 				

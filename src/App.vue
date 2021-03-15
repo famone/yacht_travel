@@ -29,6 +29,9 @@ import Footer from './components/ui/Footer.vue'
 
   export default{
   	components: {Header, Footer},
+    created(){
+      this.$store.dispatch("yachts/loadYachts")
+    }
 
   }
 </script>

@@ -34,15 +34,15 @@
 						txt: 'О КОМПАНИИ'
 					},
 					{
-						link: '/projects',
+						link: '/yachts',
 						txt: 'ВЫБРАТЬ ЯХТУ'
 					},
 					{
-						link: '/gallery',
+						link: '/tours',
 						txt: 'ТУРЫ И НАПРАВЛЕНИЯ'
 					},
 					{
-						link: '/prices',
+						link: '/dopolnitelno',
 						txt: 'ДОПОЛНИТЕЛЬНО'
 					},
 					{

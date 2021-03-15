@@ -420,10 +420,31 @@ h3{
 	align-items: flex-end;
 	padding:30px;
 	transition: all .5s ease;
+	position: relative;
 }
 .tour-slide h3{
 	font-size: 20px;
 	font-weight: 600;
+	text-transform: uppercase;
+}
+.tour-slide .more-look{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #BE8D55;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: 0;
+	background-image: url(../img/search.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	top:calc(50% - 20px);
+	left:calc(50% - 20px);
+}
+.tour-slide:hover .more-look{
+	opacity: 1;
 }
 .swiper-slide-active .tour-slide{
 	transform: scale(1.1);
@@ -630,6 +651,7 @@ footer ul li:hover{
     padding: 15px 32px;
     background-color: transparent;
     transition: all .3s ease;
+    position: relative;
 }
 .goback-btn:hover{
 	background-color: #fff;
@@ -670,6 +692,13 @@ h5{
     font-size: 12px;
     letter-spacing: 0.1em;
     color: #C4C4C4;
+    margin-bottom: 10px;
+}
+.small-blue{
+	font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #192531;
     margin-bottom: 10px;
 }
 .blue-txt{
@@ -719,9 +748,121 @@ h5{
 	border-bottom: 2px solid #BE8D55;
 }
 
+.yacht-slider-img{
+	height: 200px;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.yacht-slider-img .more-look{
+	height: 40px;
+	width: 40px;
+	background-color: #BE8D55;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: 0;
+	background-image: url(../img/search.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+}
+.yacht-slider-img:hover .more-look{
+	opacity: 1;
+}
+#yachtImgSlider{
+	margin-top: -60px;
+}
+#yachtImgSlider .row{
+	position: relative;
+}
+#yachtImgSlider .swiper-container{
+	margin-bottom: 0!important;
+	padding-bottom: 0!important;
+}
+#yachtImgSlider .prevBtn{
+	position: absolute;
+	left: -50px;
+	top: 55%;
+	z-index: 10;
+}
+#yachtImgSlider .nextBtn{
+	position: absolute;
+	right: -50px;
+	top: 53%;
+	z-index: 10;
+}
+#yachtImgSlider .swiper-button-disabled{
+	opacity: .3;
+}
+.image-pop{
+	position: fixed;
+	z-index: 110;
+	background-color: rgba(25,37,49, .9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.image-pop img{
+	max-width: 70%;
+}
 
-
-
+.stops{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.stop{
+	width: 20%;
+	position: relative;
+	margin-bottom: 15px;
+}
+.stop:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 5px;
+	height: 1px;
+	width: 100%;
+	background-color: #BE8D55;
+}
+.stop:last-child::before{
+	display: none;
+}
+.stop .dot{
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	background-color: #BE8D55;
+	margin-bottom: 10px;
+}
+.stop .blue-txt{
+	margin-bottom: 0;
+}
+.your-choise{
+	background-color: #be8d5599;
+	border-radius:5px;
+	padding: 10px 15px;
+	width: fit-content;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.your-choise img{
+	height: 18px;
+	margin-right: 8px;
+}
 
 
 
@@ -841,6 +982,42 @@ h5{
 	#about{
 		background-image: none;
 	}
+	.stop{
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.stop:before{
+		width: 1px;
+		height: calc(100% + 30px);
+		left: 4.4px;
+		top: 15px;
+	}
+	.stop .dot{
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+	.stop .small-blue{
+		margin: 0;
+		font-size: 16px;
+	}
+	.scroll-row{
+		display: flex;
+    	overflow-x: scroll;
+    	margin-bottom: 20px!important;
+	}
+	.yacht-card{
+		height: 515px;
+		width: 280px;
+	}
+	#yachtImgSlider .prevBtn{
+		display: none;	
+	}
+	#yachtImgSlider .nextBtn{
+		display: none;
+	}
 }
 @media (max-width: 390px) {
 	
@@ -872,6 +1049,29 @@ a:focus{
 	text-decoration: none;
 }
 
+.scroll-row::-webkit-scrollbar {
+	height: 3px;
+	width: calc(100% - 15px);
+	border-radius: 20px;
+}
+
+/* Track */
+.scroll-row::-webkit-scrollbar-track {
+	background: #ececec;
+	border-radius: 20px;
+}
+
+/* Handle */
+.scroll-row::-webkit-scrollbar-thumb {
+	background: #BE8D55;
+	border-radius: 20px;
+}
+
+/* Handle on hover */
+.scroll-row::-webkit-scrollbar-thumb:hover {
+	background: #BE8D55;
+	border-radius: 20px;
+}
 
 .row{
 	margin: 0;
