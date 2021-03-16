@@ -41,13 +41,112 @@ body{
 
 /*header*/
 
+.mobile-nav-btn{
+	height: 36px;
+	width: 36px;
+	position: relative;
+}
+.mobile-nav-btn span{
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	transition: all .3s ease;
+	top: 17px;
+}
+.mobile-nav-btn span:first-child{
+	top: 4px;
+	width: 50%;
+}
+.mobile-nav-btn span:last-child{
+	top: 30px;
+	width: 50%;
+}
+.navBtnAc span{
+	width: 0%;
+	opacity: 0;
+}
+.navBtnAc span:first-child{
+	width: 100%;
+	opacity: 1;
+	transform: rotate(135deg);
+	top: 17px;
+}
+.navBtnAc span:last-child{
+	width: 100%;
+	opacity: 1;
+	transform: rotate(-135deg);
+	top: 17px;
+}
+.mobile-nav{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: -100%;
+	background-color: #192531f2;
+	z-index: -1;
+	transition: all .3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	backdrop-filter: blur(5px);
+}
+.mobNavAc{
+	top: 0;
+}
+.mobile-nav ul{
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.mobile-nav li{
+	font-weight: 500;
+	width: 100%;
+	text-align:center;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 0;
+    letter-spacing: 0.1em;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .3s ease;
+    margin-bottom: 15px;
+} 
+.mobile-nav a{
+	font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 0;
+    letter-spacing: 0.1em;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .3s ease;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
 header{
 	position: absolute;
 	z-index: 100;
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding:30px;
+	padding:30px 0;
+}
+.fixedHeader{
+	position: fixed;
 }
 .darkHeader{
 	background-color: #192531;
@@ -1057,6 +1156,9 @@ h5{
 	.simple-btn{
 		font-size: 13px;
 		padding: 15px;
+	}
+	#yachts .container{
+		padding: 0;
 	}
 }
 @media (max-width: 390px) {

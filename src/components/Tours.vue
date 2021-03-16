@@ -68,7 +68,7 @@ import {mapGetters} from 'vuex'
 		          },
 		           breakpoints: {
 			            320: {
-			              slidesPerView: 1,
+			              slidesPerView: 1.2,
 			              spaceBetween: 15,
 			              touchRatio: 1
 			            },

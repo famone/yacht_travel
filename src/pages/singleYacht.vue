@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="prevBtn"></div>
 						<div class="nextBtn"></div>
-					<swiper ref="mySwiper" :options="swiperOptions">
+					<swiper ref="mySwiper" :options="swiperOptions" @slideChange="getSlideNum">
 						<swiper-slide v-for="(img, index) in yacht(id).images">
 		   					<div class="yacht-slider-img" :style="{'background-image': 'url(' + img + ')'}">	
 		   						<div class="more-look" @click="openImg(index)" ></div>
@@ -129,12 +129,18 @@ import {mapGetters} from 'vuex'
 	       		return this.$refs.mySwiper.$swiper
 	    	}
 		},
+		mounted(){
+			console.log(this.$refs.mySwiper.$swiper.activeIndex)
+		},
 		methods: {
 			openImg(index){
 				this.imageInPop = this.yacht(this.id).images[index]
 			},
 			closeImg(){
 				this.imageInPop = ''
+			},
+			getSlideNum(){
+				console.log(this.$refs.mySwiper.$swiper.activeIndex )
 			}
 		},
 		data(){
@@ -142,7 +148,7 @@ import {mapGetters} from 'vuex'
 				liked: false,
 				imageInPop: '',
 				swiperOptions: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                   spaceBetween: 15,
                   draggable: true,
                   touchRatio: 1,
@@ -165,7 +171,7 @@ import {mapGetters} from 'vuex'
 				           touchRatio: 1
 				        },
 				        1150: {
-				          slidesPerView: 4,
+				          slidesPerView: 3,
 				          spaceBetween: 15,
 				           touchRatio: 1
 				        }
