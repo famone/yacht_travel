@@ -5,7 +5,6 @@
 				<div class="col-lg-12 text-center">
 					<button class="goback-btn" @click="$router.go(-1)">НАЗАД</button>
 					<h1>ДОПОЛНИТЕЛЬНО</h1>
-					<button class="gold-btn">ЗАБРОНИРОВАТЬ</button>
 				</div>
 			</div>
 		</section>

@@ -149,22 +149,6 @@ import simpleForm from '../components/ui/simpleForm.vue'
 </script>
 
 <style scoped>
-.gold-btn{
-	position: relative;
-}
-.icon-box{
-	margin-bottom: 40px;
-	padding: 0 15px;
-}
-.icon-box img{
-	height: 60px;
-	margin-bottom: 15px;
-}
-.variant{
-	background-color: #ECECEC;
-	padding:20px;
-	min-height: 361px;
-}
 #price{
 	padding:100px 0;
 }

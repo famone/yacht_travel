@@ -30,7 +30,7 @@
 			return{
 				navs: [
 					{
-						link: '/services',
+						link: '/about',
 						txt: 'О КОМПАНИИ'
 					},
 					{

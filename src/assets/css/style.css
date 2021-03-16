@@ -382,6 +382,13 @@ h3{
 	background-size: 50%;
 	background-repeat: no-repeat;
 }
+#about2{
+	padding:90px 0;
+	background-image: url(../img/about2.png);
+	background-position: left center;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
 .main-letter{
 	position: relative;
 }
@@ -865,8 +872,34 @@ h5{
 }
 
 
-
-
+.gold-btn{
+	position: relative;
+}
+.icon-box{
+	margin-bottom: 40px;
+	padding: 0 15px;
+}
+.icon-box img{
+	height: 60px;
+	margin-bottom: 15px;
+}
+.variant{
+	background-color: #ECECEC;
+	padding:20px;
+	min-height: 361px;
+}
+#why{
+	padding:90px 0;
+}
+#insta{
+	padding-bottom: 90px;
+}
+#team{
+	padding:90px 0;
+}
+#team .yacht-card{
+	height: inherit;
+}
 
 
 
@@ -982,6 +1015,9 @@ h5{
 	#about{
 		background-image: none;
 	}
+	#about2{
+		background-image: none;
+	}
 	.stop{
 		width: 100%;
 		display: flex;
@@ -1017,6 +1053,10 @@ h5{
 	}
 	#yachtImgSlider .nextBtn{
 		display: none;
+	}
+	.simple-btn{
+		font-size: 13px;
+		padding: 15px;
 	}
 }
 @media (max-width: 390px) {

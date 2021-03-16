@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
+import About from '../pages/About.vue'
 import singleYacht from '../pages/singleYacht.vue'
 import singleTour from '../pages/singleTour.vue'
 import Mazu from '../pages/Mazu.vue'
@@ -24,6 +25,10 @@ const routes = [
 		{
 			path: '/yachts',
 			component: Yachts
+		},
+		{
+			path: '/about',
+			component: About
 		},
 		{
 			path: '/tours/:id',
